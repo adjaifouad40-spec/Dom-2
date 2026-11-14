@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #2c3e50;
+}
+
+/* Conteneur : contenu centré horizontalement + marge en haut */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* Boîte de couleur : taille fixe + couleur par défaut */
+#color-box {
+  width: 220px;
+  height: 220px;
+  margin: 20px 0 10px;
+  border-radius: 16px;
+  background-color: #3498db;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.4s ease;
+}
+
+#color-code {
+  font-family: monospace;
+  font-size: 1.1rem;
+  margin: 0 0 20px;
+}
+
+/* Bouton visible et facile à cliquer */
+#change-color-btn {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: #2c3e50;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+#change-color-btn:hover {
+  background: #1a252f;
+  transform: translateY(-2px);
+}
+
+#change-color-btn:active {
+  transform: translateY(0);
+}
